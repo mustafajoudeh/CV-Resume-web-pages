@@ -61,6 +61,17 @@ https://www.linkedin.com/in/mustafa-joudeh-37520a377
 **GitHub:**  
 https://github.com/mustafajoudeh
 
+## UI Design
+
+The portfolio design was planned and documented using Figma before the implementation phase.
+
+The `design` folder contains the initial design references:
+
+- **portfolio-wireframe.pdf** — Initial wireframe showing the structure and layout of the portfolio.
+- **portfolio-hifi-mockup.pdf** — High-fidelity mockup showing the visual design and overall appearance of the portfolio.
+
+> **Note:** These files are design references and mockups. The final website was implemented separately using HTML and CSS, so some visual details and layouts may differ from the final implementation.
+
 ## License
 
 This project is for portfolio and educational purposes.
