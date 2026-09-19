@@ -3,412 +3,504 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
-      content="Mustafa Joudeh - Junior .NET Backend Developer specializing in C#, ASP.NET Core and SQL Server."
+      content="Mustafa Joudeh - .NET Backend Developer specializing in C#, ASP.NET Core and SQL Server."
     />
 
     <title>Mustafa Joudeh | .NET Backend Developer</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- Header & Navigation -->
     <header class="site-header">
-      <div class="logo">
-        <p class="logo-name">Mustafa<span>Joudeh</span></p>
+      <div class="container header-content">
+        <a href="#Home" class="logo" aria-label="Mustafa Joudeh - Home">
+          <p class="logo-name">Mustafa<span>Joudeh</span></p>
+        </a>
+
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-label="Toggle navigation menu"
+        />
+
+        <label for="menu-toggle" class="menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li class="nav-item">
+              <a href="#Home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#About">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Skills">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navigation">
-        <ul class="nav-links">
-          <li class="nav-item"><a href="#Home">Home</a></li>
-          <li class="nav-item"><a href="#About">About</a></li>
-          <li class="nav-item"><a href="#Skills">Skills</a></li>
-          <li class="nav-item"><a href="#Projects">Projects</a></li>
-          <li class="nav-item"><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
     </header>
+
     <main>
+      <!-- Hero Section -->
       <section id="Home" class="hero">
-        <picture>
-          <!-- Mobile -->
+        <picture class="hero-background">
           <source
             media="(max-width: 767px)"
             srcset="assests/images/hero-mobile.png"
           />
 
-          <!-- Tablet -->
           <source
             media="(max-width: 1023px)"
             srcset="assests/images/hero-tablet.png"
           />
 
-          <!-- Large Desktop -->
           <source
             media="(min-width: 2000px)"
             srcset="assests/images/hero-large.png"
           />
 
-          <!-- Wide Desktop -->
           <source
             media="(min-width: 1440px)"
             srcset="assests/images/hero-wide.png"
           />
 
-          <!-- Desktop -->
           <source
             media="(min-width: 1024px)"
             srcset="assests/images/hero-desktop.png"
           />
 
-          <img src="assests/images/hero-desktop.png" alt="Hero Section Image" />
+          <img src="assests/images/hero-desktop.png" alt="" />
         </picture>
-        <img class="MyPhoto" src="assests/images/My Photo.jpeg" alt="MyPhoto" />
-        <article class="hero-content">
-          <p class="hero-greeting">Hello, I'm</p>
 
-          <h1>Mustafa Joudeh</h1>
+        <div class="hero-overlay"></div>
 
-          <h2>Back-end Developer</h2>
+        <div class="container hero-container">
+          <img
+            class="MyPhoto"
+            src="assests/images/My Photo.jpeg"
+            alt="Mustafa Joudeh"
+          />
 
-          <p class="hero-description">
-            I build reliable and scalable web applications using C#, .NET, and
-            ASP.NET Core.
-          </p>
+          <article class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
 
-          <div class="hero-buttons">
-            <a href="#Projects" class="btn-primary">View My Work</a>
-            <a href="#Contact" class="btn-secondary">Contact Me</a>
-          </div>
-        </article>
-      </section>
+            <h1>Mustafa Joudeh</h1>
 
-      <section class="about section" id="About">
-        <header class="section-header">
-          <p class="section-label">ABOUT ME</p>
-          <h2>Building Solutions With .NET</h2>
-        </header>
+            <h2>.NET Backend Developer</h2>
 
-        <article class="about-content">
-          <div class="about-text">
-            <p>
-              Entry-level .NET developer with strong knowledge of C#,
-              Object-Oriented Programming, Data Structures, and SQL Server.
+            <p class="hero-description">
+              I build reliable backend systems and business applications using
+              C#, .NET, ASP.NET Core, and SQL Server.
             </p>
 
-            <p>
-              Experienced in building database-driven applications and backend
-              APIs using .NET Framework, ADO.NET, ASP.NET Core Web API, and
-              Entity Framework Core.
-            </p>
+            <div class="hero-buttons">
+              <a href="#Projects" class="btn-primary">View My Work</a>
 
-            <p>
-              Interested in secure, scalable business systems with clean layered
-              architecture.
-            </p>
-          </div>
-
-          <aside class="about-info">
-            <dl>
-              <div>
-                <dt>Location</dt>
-                <dd>Amman, Jordan</dd>
-              </div>
-
-              <div>
-                <dt>Email</dt>
-                <dd>
-                  <a href="mailto:mustafa.joudeh2@gmail.com">
-                    mustafa.joudeh2@gmail.com
-                  </a>
-                </dd>
-              </div>
-
-              <div>
-                <dt>Phone</dt>
-                <dd>
-                  <a href="tel:+962776315124"> 0776315124 </a>
-                </dd>
-              </div>
-
-              <div>
-                <dt>Specialization</dt>
-                <dd>.NET Backend Development</dd>
-              </div>
-            </dl>
-
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/mustafa-joudeh-37520a377"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-
-              <a
-                href="https://github.com/mustafajoudeh"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
+              <a href="#Contact" class="btn-secondary">Contact Me</a>
             </div>
-          </aside>
-        </article>
-      </section>
-      <section class="skills section" id="Skills">
-        <header class="section-header">
-          <p class="section-label">MY SKILLS</p>
-          <h2>Technical Skills</h2>
-        </header>
-
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3>Programming Languages</h3>
-
-            <ul>
-              <li>C#</li>
-              <li>C++</li>
-              <li>JavaScript</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>Backend Development</h3>
-
-            <ul>
-              <li>ASP.NET Core Web API</li>
-              <li>.NET Framework</li>
-              <li>ADO.NET</li>
-              <li>Entity Framework Core</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>Database</h3>
-
-            <ul>
-              <li>SQL Server</li>
-              <li>T-SQL</li>
-              <li>Stored Procedures</li>
-              <li>Indexing</li>
-              <li>Relational Database Design</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>Core Concepts</h3>
-
-            <ul>
-              <li>OOP</li>
-              <li>Data Structures & Algorithms</li>
-              <li>Three-Tier Architecture</li>
-              <li>REST APIs</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>Security</h3>
-
-            <ul>
-              <li>JWT Authentication</li>
-              <li>Role-Based Access Control</li>
-              <li>Authorization</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>Frontend Basics</h3>
-
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>React Basics</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>Tools</h3>
-
-            <ul>
-              <li>Visual Studio</li>
-              <li>SQL Server Management Studio</li>
-              <li>Git</li>
-              <li>GitHub</li>
-            </ul>
           </article>
         </div>
       </section>
 
+      <!-- About Section -->
+      <section class="about section" id="About">
+        <div class="container">
+          <header class="section-header">
+            <h2>About Me</h2>
+          </header>
+
+          <div class="about-content">
+            <article class="about-text">
+              <p>
+                I’m a .NET Backend Developer focused on building reliable,
+                maintainable, and database-driven applications using C#, .NET,
+                and ASP.NET Core.
+              </p>
+
+              <p>
+                My development approach is based on strong programming
+                fundamentals, including Object-Oriented Programming, Data
+                Structures, Algorithms, and relational database design. I apply
+                these concepts to create backend solutions that are organized,
+                understandable, and built to support real business requirements.
+              </p>
+
+              <p>
+                I have hands-on experience developing RESTful APIs and
+                database-driven applications using ASP.NET Core Web API,
+                ADO.NET, Entity Framework Core, and SQL Server. I also work with
+                layered architecture to separate responsibilities and make
+                applications easier to maintain and extend.
+              </p>
+
+              <p>
+                I’m particularly interested in business systems where backend
+                development, data, security, and clear system design come
+                together to solve practical problems.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills section" id="Skills">
+        <div class="container">
+          <header class="section-header">
+            <h2>Technical Skills</h2>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Programming Languages</h3>
+
+              <ul>
+                <li>C#</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Backend Development</h3>
+
+              <ul>
+                <li>ASP.NET Core Web API</li>
+                <li>.NET Framework</li>
+                <li>ADO.NET</li>
+                <li>Entity Framework Core</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Database</h3>
+
+              <ul>
+                <li>SQL Server</li>
+                <li>T-SQL</li>
+                <li>Stored Procedures</li>
+                <li>Indexing</li>
+                <li>Relational Database Design</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Security</h3>
+
+              <ul>
+                <li>JWT Authentication</li>
+                <li>Role-Based Access Control</li>
+                <li>Authorization</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Frontend Basics</h3>
+
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React Basics</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Tools</h3>
+
+              <ul>
+                <li>Visual Studio</li>
+                <li>SQL Server Management Studio</li>
+                <li>Git</li>
+                <li>GitHub</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
       <section class="projects section" id="Projects">
-        <header class="section-header">
-          <p class="section-label">MY PROJECTS</p>
-          <h2>Featured Projects</h2>
-        </header>
+        <div class="container">
+          <header class="section-header">
+            <h2>Featured Projects</h2>
+          </header>
 
-        <div class="projects-grid">
-          <article class="project-card">
-            <figure class="project-image">
-              <img
-                src="assests/images/Projects Logos/HRMS Logo.jpg"
-                alt="HRNexus Employee Lifecycle Core System"
-              />
-            </figure>
+          <div class="projects-grid">
+            <a
+              href="https://github.com/mustafa2004A/HRNexus2"
+              class="project-card"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View HRNexus project on GitHub"
+            >
+              <figure class="project-image">
+                <img
+                  src="assests/images/Projects Logos/HRMS Logo.jpg"
+                  alt="HRNexus Employee Lifecycle Core System"
+                />
+              </figure>
 
-            <div class="project-content">
-              <p class="project-date">2026 - Present</p>
+              <div class="project-content">
+                <p class="project-date">2026 - Present</p>
 
-              <h3>HRNexus</h3>
+                <div class="project-title-row">
+                  <h3>HRNexus</h3>
 
-              <div class="project-title-row">
+                  <span class="project-github" aria-hidden="true">
+                    <img
+                      class="github-icon"
+                      src="assests/images/icons/github.png"
+                      alt=""
+                    />
+                  </span>
+                </div>
+
                 <p class="project-type">Employee Lifecycle Core System</p>
 
-                <a
-                  href="https://github.com/mustafa2004A/HRNexus2"
-                  class="project-github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View HRNexus on GitHub"
-                >
-                  <img
-                    class="github-icon"
-                    src="assests/images/icons/github.png"
-                    alt="github icon"
-                  />
-                </a>
+                <p class="project-description">
+                  An HR management system focused on employee lifecycle
+                  operations, core HR data, and business processes.
+                </p>
+
+                <ul class="project-technologies">
+                  <li>C#</li>
+                  <li>ASP.NET Core</li>
+                  <li>EF Core</li>
+                  <li>SQL Server</li>
+                  <li>React</li>
+                </ul>
               </div>
+            </a>
 
-              <p>
-                An HR management system focused on employee lifecycle operations
-                and core HR data.
-              </p>
+            <a
+              href="DVLD_GITHUB_URL"
+              class="project-card"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View DVLD project on GitHub"
+            >
+              <figure class="project-image">
+                <img
+                  src="assests/images/Projects Logos/DVLD Logo.jpg"
+                  alt="DVLD Driving License Management System"
+                />
+              </figure>
 
-              <ul class="project-technologies">
-                <li>C#</li>
-                <li>ASP.NET Core</li>
-                <li>EF Core</li>
-                <li>SQL Server</li>
-                <li>React</li>
-              </ul>
-            </div>
-          </article>
+              <div class="project-content">
+                <p class="project-date">Jul 2025 - Sep 2025</p>
 
-          <article class="project-card">
-            <figure class="project-image">
-              <img
-                src="assests/images/Projects Logos/DVLD Logo.jpg"
-                alt="DVLD Driving License Management System"
-              />
-            </figure>
+                <div class="project-title-row">
+                  <h3>DVLD Project</h3>
 
-            <div class="project-content">
-              <p class="project-date">Jul 2025 - Sep 2025</p>
+                  <span class="project-github" aria-hidden="true">
+                    <img
+                      class="github-icon"
+                      src="assests/images/icons/github.png"
+                      alt=""
+                    />
+                  </span>
+                </div>
 
-              <h3>DVLD Project</h3>
-
-              <div class="project-title-row">
                 <p class="project-type">Driving License Management System</p>
 
-                <a
-                  href="DVLD_GITHUB_URL"
-                  class="project-github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View DVLD on GitHub"
-                >
-                  <img
-                    class="github-icon"
-                    src="assests/images/icons/github.png"
-                    alt="github icon"
-                  />
-                </a>
+                <p class="project-description">
+                  A desktop application for managing driving licenses,
+                  applications, and related driver information.
+                </p>
+
+                <ul class="project-technologies">
+                  <li>C#</li>
+                  <li>.NET Framework</li>
+                  <li>WinForms</li>
+                  <li>ADO.NET</li>
+                  <li>SQL Server</li>
+                </ul>
               </div>
-
-              <p>
-                A desktop application for managing driving license services
-                using C# and .NET Framework.
-              </p>
-
-              <ul class="project-technologies">
-                <li>C#</li>
-                <li>.NET Framework</li>
-                <li>WinForms</li>
-                <li>ADO.NET</li>
-                <li>SQL Server</li>
-              </ul>
-            </div>
-          </article>
+            </a>
+          </div>
         </div>
       </section>
 
+      <!-- Contact Section -->
       <section class="contact section" id="Contact">
-        <header class="section-header">
-          <p class="section-label">CONTACT ME</p>
+        <div class="container">
+          <header class="section-header">
+            <h2>Let's Work Together</h2>
 
-          <h2>Let's Work Together</h2>
+            <p>Have a project or opportunity? Feel free to get in touch.</p>
+          </header>
 
-          <p>Have a project or opportunity? Feel free to get in touch.</p>
-        </header>
+          <div class="contact-content">
+            <aside class="contact-info">
+              <h3>Get In Touch</h3>
 
-        <form class="contact-form" action="success.html" method="get">
-          <div class="form-group">
-            <label for="name">Name</label>
+              <p class="contact-intro">
+                Whether you have a project, job opportunity, or simply want to
+                connect, feel free to reach out.
+              </p>
 
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-              required
-            />
+              <dl>
+                <div>
+                  <dt>Location</dt>
+                  <dd>Amman, Jordan</dd>
+                </div>
+
+                <div>
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:mustafa.joudeh2@gmail.com">
+                      mustafa.joudeh2@gmail.com
+                    </a>
+                  </dd>
+                </div>
+
+                <div>
+                  <dt>Phone</dt>
+                  <dd>
+                    <a href="tel:+962776315124">0776315124</a>
+                  </dd>
+                </div>
+
+                <div>
+                  <dt>Specialization</dt>
+                  <dd>.NET Backend Development</dd>
+                </div>
+              </dl>
+
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/mustafa-joudeh-37520a377"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+
+                <a
+                  href="https://github.com/mustafajoudeh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </aside>
+
+            <form class="contact-form" action="#message-sent" method="get">
+              <div class="form-group">
+                <label for="name">Name</label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  minlength="20"
+                  maxlength="1000"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+
+            <div class="success-overlay" id="message-sent">
+              <div
+                class="success-card"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="success-title"
+                aria-describedby="success-description"
+              >
+                <a href="#Contact" class="success-close" aria-label="Close">
+                  &times;
+                </a>
+
+                <div class="success-icon" aria-hidden="true">✓</div>
+
+                <h2 id="success-title">Message Sent Successfully!</h2>
+
+                <p id="success-description">
+                  Thank you for reaching out. I appreciate your message and will
+                  get back to you as soon as possible.
+                </p>
+
+                <a href="#Contact" class="back-button">Back to Contact</a>
+              </div>
+            </div>
           </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Write your message..."
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+        </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="site-footer">
-      <p>Mustafa<span>Joudeh</span></p>
+      <div class="container footer-content">
+        <p>Mustafa<span>Joudeh</span></p>
 
-      <p>Junior .NET Backend Developer</p>
+        <p>.NET Backend Developer</p>
 
-      <small> &copy; 2026 Mustafa Joudeh. All rights reserved. </small>
+        <small>&copy; 2026 Mustafa Joudeh. All rights reserved.</small>
+      </div>
     </footer>
   </body>
 </html>
